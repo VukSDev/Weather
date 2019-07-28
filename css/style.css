@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  --white: white;
+  --light-grey: #9c9c9c;
+  --dark-grey: #2c2c2c;
+  --darker-grey: #1c1c1c;
+  --darkest-grey: #111;
+}
+
+body {
+  background: linear-gradient(to bottom, var(--dark-grey), var(--darkest-grey));
+  font-family: Lato;
+  font-weight: 400;
+  color: var(--white);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location,
+.temperature {
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.temperature {
+  flex-direction: column;
+}
+
+.degree-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.degree-section span {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.degree-section h2 {
+  font-size: 40px;
+}
