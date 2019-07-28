@@ -49,3 +49,25 @@ body {
 .degree-section h2 {
   font-size: 40px;
 }
+
+@media only screen and (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+
+  .degree-section span {
+    font-size: 30px;
+  }
+
+  .degree-section h2 {
+    font-size: 40px;
+  }
+
+  .location {
+    flex-direction: column;
+  }
+
+  .location-timezone {
+    font-size: 20px;
+  }
+}
